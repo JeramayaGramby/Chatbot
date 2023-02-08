@@ -1,5 +1,4 @@
 '''Importing all the necessary libraries'''
-import os
 import random
 import json
 import pickle
