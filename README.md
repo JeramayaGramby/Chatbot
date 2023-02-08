@@ -126,4 +126,4 @@ And remember! Currently I can only answer common questions about the Golden Stat
 DO NOT use the word "next" in a question and please let me know when you would like to end the chat."<br><br>
 
 ## Project Photo <br><br>
-![photo](photos/Untitled.png)
+![photo](photos/training.png)
