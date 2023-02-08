@@ -8,6 +8,7 @@ from keras.models import load_model
 from nltk.stem import WordNetLemmatizer
 
 '''Creating the lemmatizer (grouping all related word forms)'''
+
 lemmatizer = WordNetLemmatizer
 intents = json.loads(open('intents.json').read())
 
@@ -16,6 +17,7 @@ classes = pickle.load(open('classes.pkl','rb'))
 model = load_model('Swish V1.model')
 
 '''Converting the neural networks raw data'''
+
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
     sentence_words = [lemmatizer.lemmatize(word) for word in sentence_words]
@@ -50,7 +52,9 @@ def get_response(intents_list,intents_json):
             result = random.choice(i['responses'])
             break
     return result
+
 print("Swish V1 is currently online")
+
 while True:
     message = input("")
     ints = class_predictor(message)
