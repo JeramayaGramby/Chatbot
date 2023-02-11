@@ -1,8 +1,8 @@
 <br>
 
-# This README file includes:
+## This README file includes:
 
--An overview of what Swish V1 does,<br>
+-An overview of what Swish V1 does<br>
 -Swish V1's use cases<br>
 -Swish V1's underlying components<br>
 -The scalability of Swish V1 and how to scale Swish V1<br>
@@ -12,14 +12,14 @@
 -Project photo<br><br>
 
 
-##                                       Overview of Swish V1
+## Overview of Swish V1
 
 Swish V1 is a 'fanbot' that utilizes shallow NLP methods in combination with a trained 
 neural network to answer the most common trivia questions surrounding the Golden State Warriors basketball team.<br><br>
 This chatbot is designed to educate curious new fans of the Golden State Warriors who want to understand the
 team and can provide answers for trivia questions.<br><br>
 
-##                                        Use Cases for Swish V1:
+## Use Cases for Swish V1:
 
 New or younger Warriors fans are commonly referred to as 'bandwagon' fans by NBA fans because of their perceived
 lack of knowledge concerning Golden State's history. In my experience Warriors fans are criticized on their amount of
@@ -31,7 +31,7 @@ With just a few keywords a brand-new Warriors fan can find out when and where Dr
 the names and legacy behind the Warriors 'Run-TMC' trio and even find out where Steph Curry ranks all time for
 points scored in his career.<br><br>
 
-##                                    Swish V1's underlying components:
+## Swish V1's underlying components:
 
 The core functionality of the chatbot goes something like this: A JSON file ('intents.json') contains all the
 questions and related questions to a given topic in Warriors Trivia (example: Stephen Curry's draft position) in
@@ -47,7 +47,7 @@ the pickle and model file data is loaded. 4 functions are then used to convert t
 from the model file, predict what the words are and test user input against the model.<br><br>
 
 
-##                                Scalability of Swish V1
+## Scalability of Swish V1
 
 Swish V1 can be scaled in multiple ways. The JSON file could be manually expanded out or 
 expanded out with a script. This model is also very well-equipped to receive JSON data from an API. 
@@ -68,11 +68,10 @@ It uses shallow NLP methods that are less reliable with larger amounts of user i
 The word 'next' CANNOT be used in a question. The user can use sentences to communicate with Swish V1, 
 but it is highly encouraged that the user uses targeted keywords rather than sentences for a higher probability 
 of matching the question to the correct answer. <br><br>In terms of my plans for Swish V2 I am uncertain whether I want 
-to utilize API data with a larger variety of trivia answers related to just the Warriors or if I 
-should expand the list of answerable basketball questions.<br><br>
+to utilize API data with a larger variety of trivia answers related to just the Warriors or if I should expand the list of answerable basketball questions.<br><br>
 
                     
-##                    Current list of answerable questions
+## Current list of answerable questions
 -What is Stephen Curry's total amount of points/How many points has Steph Curry Scored?<br>
 -Where is Golden State's current location?<br>
 -Where were the Golden State Warriors originally located?<br>
